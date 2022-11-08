@@ -1,0 +1,79 @@
+<html>
+    <fieldset>
+        <legend>Formulario para Contato</legend>
+    <head>
+        <fieldset>
+            <legend>Dados sobre o candidato</legend>
+            <label>
+                Nome:<input type ="text" value = "Luiz" name="nome"/>
+            </label>
+            <br>
+            <label>
+                Email:<input type = "email" name="email" id = "email" required placeholder="seunome@dominio.com">
+            </label>
+            <br>
+            <label>
+                Website:<input type ="text" value = "http://" name="Website"/>
+            </label>
+        </fieldset>
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>Seu Curso no ICOMP</legend>
+            <label>
+                <input type="radio" name="curso" value="cc" checked>Ciencia da Computacao<br>
+                <input type="radio" name="curso" value="es" checked>Engenharia de Software<br>
+                <input type="radio" name="curso" value="ec" checked>Engenharia da Computacao<br>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Assinale Linguagens de seu conhecimento</legend>
+            <label>
+                <label for="java">Java</label>
+                <input type="checkbox" name="ling" id="java" value="java">
+                <label for="c">C</label>
+                <input type="checkbox" name="ling" id="c" value="c">
+                <label for="cpp">C++</label>
+                <input type="checkbox" name="ling" id="cpp" value="cpp">
+                <label for="node">Node.js</label>
+                <input type="checkbox" name="ling" id="perl" value="perl">
+                <label for="python">Python</label>
+                <input type="checkbox" name="ling" id="python" value="python">
+                <label for="js">Javascript</label>
+                <input type="checkbox" name="ling" id="js" value="js">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Area em que atua</legend>
+            <label>Selecione abaixo:
+                <br>
+                <select name="area" id="area">
+                    <option value="1">Banco de Dados</option>
+                    <option value="2">Front-End</option>
+                    <option value="3">Engenharia de Software</option>
+                    <option value="4">Back-End</option>
+                    <option value="5">Devops</option>
+                    <option value="6">Mobile</option>
+                    <option value="7">IOS</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Curriculo</legend>
+            <label>
+                Envie Seu curriculo:
+                <input type="file" name="curriculo">
+            </label>
+        </fieldset>
+        <br>
+        <button>Resetar Mensagem</button>
+        <button>Enviar Mensagem</button>
+    </body>
+    </fieldset>
+
+</html>
+Footer
