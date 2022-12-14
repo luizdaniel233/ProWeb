@@ -1,0 +1,10 @@
+O hoisting é a questão de mesmo você fazer a função no meio do código e chamá-la la na primeira linha e ela funcionar,
+ou seja estar visível para o javascript,isso interfere na analise de código e interpretação e também no armazanemento de valores in variáveis,dependendo do padrão de código
+da pessoa isso vai atrapalhar mais,meu padrão de desenvolver é fazer a função e chamá-la abaixo.
+Exemplo 1: Uso de hosting 
+
+too();
+
+function too(){
+    console.log("oi")
+}
