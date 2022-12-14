@@ -1,1 +1,4 @@
-Os tres seletores são class,title e p.
+Os tres seletores são 
+class
+title
+p.

@@ -10,3 +10,5 @@ A maneira correta de declarar uma cor no Css embarcado é
 3) Linha 24 nós temos uma função JS. O jeito correto de se declarar o função seria com a tag <script></script>.
 
 4) Linha 18, a tag <strong> não foi fechada.Logo não vai evidenciar o Departamento de Ciência da Computação. É necessário fechar a tag.
+
+5) Linha 29 no lugar de that é para ser this.
