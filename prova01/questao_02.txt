@@ -1,4 +1,4 @@
-Os tres seletores são 
-class
-title
-p.
+Os seletores que podem chamar apenas span são:
+title;
+p;
+h1;
