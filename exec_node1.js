@@ -8,6 +8,7 @@ let list_files = [];
 
 fs.readdir(__dirname + `/${arg}`, { withFileTypes: true }, (err, files) => {
   if (err) console.log(err);
+  
   else {
     files.forEach((file) => {
       list_files.push(file.name);
