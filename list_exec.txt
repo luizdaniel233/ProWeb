@@ -1,0 +1,97 @@
+1) O erro se encontra na tag meta,ela deve estar localizada dentro da tag head e não no body.
+2) O bowser apesar de saber o tamanho da imagem ,é bom informar para que o browser reserve o espaço da imagem antes de carrega-la.
+3)
+4)Estilos inline são os que voce declara com o atributo style,separados por ;
+  Estilos embarcados são os que voce declara na tags <style>,são adicionados no cabeçalho da página,entre <head/>
+  Estilos Externos são arquivos que apenas possuem diretrizes css.
+  Escolhi o inline.
+  <!DOCTYPE html>
+<html>
+    <head>
+        <p style="color:red;">Olá mundo!</p>
+    </head>
+</html>
+
+5)A unidade absoluta tem como medidas (cm,px,in) como ja diz medidas absolutas e a relativa tem como %,em,vw e que todas medidas relativas são dependentes de outros valores como exemplo a % que é relativo ao valor da propriedade.o Em é relativo e é usada no css e é relativo ao tamanho da fonte.
+6)<html>
+  <body>
+    <table border="1">
+      <caption>
+        Professores do Grupo de Pesquisa em Educação em Computação(GPEC) do
+        INstituto de Computação da UFAM
+      </caption>
+      <thead>
+       <tr>
+        <th colspan="3">PRofessores do BDRI,UFAM</th>
+       </tr>
+        <tr>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Altigran S. da Silva</td>
+          <td>Professor Associado</td>
+          <td>alti@icomp.ufam.com</td>
+        </tr>
+
+        <tr>
+          <td>Andre S. da Silva</td>
+          <td>Professor Adjunto</td>
+          <td>andre@icomp.ufam.com</td>
+        </tr>
+        <tr>
+          <td>Luiz S. da Silva</td>
+          <td>Professor Associado</td>
+          <td>luiz@icomp.ufam.com</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Danilo marinho</td>
+          <td colspan="1">Professor Associado</td>
+          <td>danilo@icomp.com</td>
+        </tr>
+        <tr>
+          <td>Monitor</td>
+          <td>danilo@ufamo.com</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <img src="./img/escudo.png" style="border: 5px solid #555;"/>
+    <img src="./img/escudo.png" style="border: 5px solid #555;"/>
+  </body>
+</html>
+7)padding:5px 0px 15px 10px;
+8) class cl1
+9) A tipagem dinamica consiste em que a variavel eh definida de acordo com o valor.
+Exemplo:let i =0; i = "oi oi" i= new Date()
+Percebemos na linha acima que de acordo com o tipo do valor eh o tipo da variavel. 
+10) Temos dois butoes para add estilo e limpar,e logo abaixo na tag script temos o javascript da aplicacao,onde se clicar em Adicionar stilo ele seta os valores de cor na String e aumenta a fonte.
+11)O metodo externo eh oque ja estamos acostumado a fazer,creio q a primeira vantagem eh sobre o tamanho do codigo dependendo disso,o codigo acaba se tornando volumoso e dificil de se analisar e segundo tbm dividir em funcoes onde no embarcado nao podemos fazer,ate podemos mas fica volumoso.
+12)
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="press">Clique Aqui</button>
+    <script>
+      document.getElementById("press").onclick = function () {
+        window.alert("Botao pressionado");
+      };
+    </script>
+  </body>
+</html>
+
+13) Pois a nao eh global,o console log deveria estar dentro da funcao.
+14)Sim,sofreu hoisting,a variavel A deu undefined,porque ela so eh declarada depois.
+15)A variavelk test esta sendo chamada como uma funcao,logo imprime undefined,e atribuicao a variavel test ...prop.getFullname nao esta sendo da maneira correta,falta o () para poder conseguir pegar o valor que eh aurelio de rosa.
+16)O == compara somente valores o js converte,ja o === ver valores e tipos.
+17)Closure consiste em uma funcao dentro de outra funcao,e que tem acesso a variaveis da funcao pai,como podemos ver a function foo dentro de uma funcao ja existente e logo dps atribuida a uma variavel.
