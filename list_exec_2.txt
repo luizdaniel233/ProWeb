@@ -90,3 +90,21 @@ app.listen(port, () => {
 8) Eu utilizo no dia-a-dia e posso dizer que facilita no ambito de manutenção pois sua estrutura deixa tudo separado e organizado,
 o models serve para conexão com o banco ou apis externas(podendo ser um get,post no banco) e vem o controller para manipulamento do objeto do models e vem o view que são os html que utilizam os dados
 vindo do controller.
+
+9)A principal vantagem eh que se comporta como linguagem de programacao.
+  A segunda vantagem eh que voce pode criar variaveis.classes.
+  A terceira vantagem eh que permite que o codigo css fique mais claro e conciso.
+ 
+10)As views são arquivos de template que representam uma seção específica,ja os layouts são estruturas de uma página completa e os
+Helpers são funções que podem ser chamadas dentro de um template Handlebars.
+
+11)Os models servem para comunicação,interação com o banco de dados,as migrations servem para gerenciar as 
+mudanças no banco de dados e os seeders são scripts que servem para popular um banco de dados.
+
+12)Exato ele não mantem conexão,ele trata cada requisição HTTP independente,as sessões e cookies 
+são usados para lidar com esta limitação permitindo que o servidor mantenha informações sobre o cliente ao longo do tempo.
+
+13)O count são qunatas vezes ele está acessndo e assim continua incrementando apos cada 30s voce der f5.
+
+14) Sessões são quando um client se conecta a uma aplicação e o servidor cria uma sessão para o mesmo,a sessão eh identificada com um token unico que eh enviada ao client em forma de cookie.
+E o cookies são arquivos de texto que são armazenados pelo lado do cliente.
