@@ -1,0 +1,92 @@
+1)O node js eh baseado em i/o não bloqueantes ou seja enquanto está correndo uma tarefa
+a outras está executando em background ,usar i/o bloqueantes tornaria o tempo de respostas lentos,ou seja 
+pode bloquear a thread principal e impedir que outras tarefas sejam executadas.
+2)o callback hell é um termo que se refere á uma situação onde você acaba com uma série de callbacks um dentro do outro,
+tornando o código díficil de ler e manter.
+function getData() {
+  return new Promise((resolve, reject) => {
+    fs.readFile('data.txt', (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
+  });
+}
+
+getData().then(data => {
+  console.log(data);
+}).catch(error => {
+  console.error(error);
+});
+
+async function getData() {
+  try {
+    const data = await fs.promises.readFile('data.txt');
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getData();
+
+3)import fetch from "node-fetch";
+
+async function searchUsers(user) {
+  let bool = false;
+  let response;
+  await fetch(`https://api.github.com/search/users?q=${user}`)
+    .then((response) => response.json())
+    .then((data) => {
+      response = data;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  if (response.items.lenght != 0) {
+    response.items.forEach((element) => {
+      if (element.login == user) {
+        bool = true;
+      }
+    });
+  } else {
+    bool = false;
+  }
+  return bool;
+}
+
+let user = process.argv[2];
+user = user.replace("./", "");
+
+const request = await searchUsers(user);
+console.log(request);
+
+4) As frame opinativas são aquelas que oferecem uma estrutura rigida,ele fornece ferramentas para o dev porém o limitando(dizzendo como usar),diferente da não 
+opinativa exemplo o express,que ja é mais flexivel na questao de estruturação.
+
+5) O express por ser minimalista o aprendizado sobre ele eh tranquilo e faz com que a principal vantagem é que você
+tenha total controle sobre sua aplicação tanto no quesito de estrutura,performance,aprendizado e velocidade.
+
+6)https://github.com/luizdaniel233/ProWeb/tree/master/exec_list_2_6_question
+
+7) Middlewares são como intermediários no meio da requisição podendo ser para autenticação,validação,logging e entre outros,
+eles são implementados com app.use() e eles tem acesso a requisição,resposta.
+
+const port = 3001;
+const app = express();
+const logger = require("morgan")
+const { router } = require("./routes");
+
+app.use(logger("short"))
+
+app.use(router);
+
+app.listen(port, () => {
+  console.log(`${port} available!`);
+});
+
+8) Eu utilizo no dia-a-dia e posso dizer que facilita no ambito de manutenção pois sua estrutura deixa tudo separado e organizado,
+o models serve para conexão com o banco ou apis externas(podendo ser um get,post no banco) e vem o controller para manipulamento do objeto do models e vem o view que são os html que utilizam os dados
+vindo do controller.

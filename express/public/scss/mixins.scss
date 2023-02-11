@@ -1,0 +1,11 @@
+@mixin bordered ($wth) {
+    border-top: dotted $wth black;
+    border-bottom: solid $wth black;
+    }
+    #menu a {
+    color: #111;
+    @include bordered(2px);
+    }
+    .post a {
+    @include bordered(1px);
+    }
