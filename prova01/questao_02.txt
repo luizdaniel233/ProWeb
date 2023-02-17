@@ -1,3 +1,6 @@
+Seletores incorretos
+Nota: 0.0
+
 Os seletores que podem chamar apenas span são:
 title;
 p;

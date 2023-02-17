@@ -1,3 +1,6 @@
+Todos os erros foram encontrados corretamente.
+Nota 2.0
+
 1) Na linha 4, se tem um comentário feito de maneira errada.
 A maneira correta de comentar em html é <!-- -->
 
