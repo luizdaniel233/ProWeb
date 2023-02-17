@@ -1,0 +1,46 @@
+#space {
+  border: 1px solid black;
+  background-image: url("../assets/Background/starBackground.png");
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#space p {
+  font: bold 48px Arial, Courier, monospace;
+  color: #fff;
+  text-align: right;
+  z-index: 1000 !important;
+  direction: rtl;
+  margin-left: 20px;
+}
+
+#space a {
+  text-align: center;
+}
+
+#centered {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#ship, .enemy-ship, .enemy-ufo, .enemy-small-asteroid, .enemy-big-asteroid, .shot {
+  position: absolute;
+}
+  
+#img-life-1 {
+  opacity: 0;
+}
+
+.information{
+  text-align: center;
+}
+
+.img-life {
+  margin-right: 10px;
+}
