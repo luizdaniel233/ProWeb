@@ -19,16 +19,6 @@
   text-align: center;
 }
 
-#centered {
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 #ship, .enemy-ship, .enemy-ufo, .enemy-small-asteroid, .enemy-big-asteroid, .shot {
   position: absolute;
 }
@@ -37,8 +27,24 @@
   opacity: 0;
 }
 
-.information{
+.information, .img-life, .overlay{
+  position: relative;
   text-align: center;
+}
+
+#restart-button {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  background-color: red;
+  font-weight: 700;
+  color: white;
+}
+
+#restart-button:hover {
+  background-color: #4CAF50; 
+  color: white;
 }
 
 .img-life {

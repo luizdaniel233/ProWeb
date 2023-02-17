@@ -164,11 +164,15 @@
           rectShot.y < rectEnemy.y + rectEnemy.height &&
           rectShot.y + rectShot.height > rectEnemy.y
         ) {
-          console.log("passei");
           const en = element.className.split(" ");
+
           space.element.removeChild(element);
           this.element.src = this.AssetsStatus[1];
-          space.element.removeChild(this.element);
+          // ship.element.src = ship.AssetsDirecoes[1];
+          setTimeout(() => {
+            space.element.removeChild(this.element);
+          }, 5);
+
           switch (en[1]) {
             case "enemy-small-asteroid":
               showScore(100);
@@ -267,7 +271,7 @@
       HAS_SHOT = 1
       setTimeout(() => {
         HAS_SHOT = 0
-      }, 500);
+      }, 600);
     }
   }
 
@@ -276,6 +280,7 @@
       const information = document.getElementById("information");
       SCORE += pontuation;
       information.innerText = SCORE;
+      
 
       for (const life of Array(LIFES).keys()) {
         const element = document.createElement("img");
