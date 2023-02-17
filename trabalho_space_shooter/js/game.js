@@ -260,8 +260,15 @@
   }
 
   function shot() {
-    shots = new Shot();
-    SHOTS.push(shots);
+
+    if (HAS_SHOT == 0) {
+      shots = new Shot();
+      SHOTS.push(shots);
+      HAS_SHOT = 1
+      setTimeout(() => {
+        HAS_SHOT = 0
+      }, 500);
+    }
   }
 
   function showScore(pontuation) {
