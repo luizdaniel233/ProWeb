@@ -1,14 +1,16 @@
-var fullname = "John Doe";
-var obj = {
-  fullname: "Colin Ihrig",
-  prop: {
-    fullname: "Aurelio De Rosa",
-    getFullname: function () {
-      return this.fullname;
-    },
-  },
+function promessa (valor) {
+  return new Promise ( function (sucesso, erro) {
+    setTimeout( function () {
+      sucesso(valor);
+    }, 1000);
+  });
+}
+
+async function pegaValor () {
+  console.log(1);
+  var valor = await promessa(100);
+  console.log(valor);
 };
-console.log(obj)
-console.log(obj.prop.getFullname());
-var test = obj.prop.getFullname;
-console.log(test);
+
+pegaValor();
+console.log(2);
