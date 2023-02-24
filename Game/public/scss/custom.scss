@@ -1,0 +1,100 @@
+.invalid-feedback {
+  display: block;
+}
+#invalid-feedback {
+  display: block;
+}
+
+#montanha {
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #skier {
+    position: absolute;
+  }
+  
+  .arvore {
+    background-image: url("../img/obstacles.png");
+    background-position: 0px -31px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  .arbustoChama {
+    background-image: url("../img/obstacles.png");
+    background-position: -23px -103px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .rocha {
+    background-image: url("../img/obstacles.png");
+    background-position: -30px -52px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .toco {
+    background-image: url("../img/obstacles.png");
+    background-position: -252px -52px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .arvoreGrande {
+    background-image: url("../img/obstacles.png");
+    background-position: -95px -66px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .cachorro {
+    background-image: url("../img/obstacles.png");
+    background-position: 0px -208px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .para-frente {
+    background-image: url("../img/player.png");
+  }
+  
+  .para-direita {
+    background-image: url("../img/skier.png");
+    background-position: -26px -6px;
+    width: 22px;
+    height: 28px;
+  }
+  
+  .para-esquerda {
+    background-image: url("../img/skier.png");
+    background-position: -26px -43px;
+    width: 22px;
+    height: 28px;
+  }
+  .cair {
+    background-image: url("../img/skier.png");
+    background-position: -83px -84px;
+    width: 32px;
+    height: 25px;
+  }
+  .morrer {
+    background-image: url("../img/skier.png");
+    background-position: -242px -2px;
+    width: 30px;
+    height: 32px;
+  }
+  .options {
+    text-align: right;
+  }
+
+  .options a {
+    padding-left: 12px;
+  }
